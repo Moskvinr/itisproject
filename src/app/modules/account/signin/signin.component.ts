@@ -39,6 +39,6 @@ export class SigninComponent implements OnInit {
 
 
 export class Signin {
-  constructor(email: string,
-    password: string) { }
+  constructor(public email: string,
+    public password: string) { }
 }
