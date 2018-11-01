@@ -1,0 +1,12 @@
+<p>
+  navigation works!
+</p>
+
+<button [routerLink]='["/categories"]'>categories</button>
+<button [routerLink]='["/products"]'>products</button>
+
+<div *ngIf="checkIfLoggedOn()">
+  <a [routerLink]='["/account"]'> {{user.name}}</a>
+</div>
+
+{{location}}

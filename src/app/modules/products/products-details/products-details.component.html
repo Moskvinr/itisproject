@@ -1,0 +1,13 @@
+<p>
+  products-details works!
+</p>
+<li>{{product.name}}</li>
+<li>{{product.description}}</li>
+<div *ngFor="let image of product.images">
+  <img src="{{image.image}}">
+</div>
+<div *ngFor="let spec of product.specifications">
+  <li>
+    {{spec.name}} - {{spec.value}}
+  </li>
+</div>

@@ -1,0 +1,13 @@
+<p>
+  products-by-category-list works!
+</p>
+
+<ul *ngFor="let product of products | async">
+  <li>
+    <a [routerLink]='["/products/",product.catId, product.id]'>{{product.name}}</a>
+  </li>
+  <li>
+    {{product.description}}
+  </li>
+  <img src="{{product.images[0].image}}">
+</ul>

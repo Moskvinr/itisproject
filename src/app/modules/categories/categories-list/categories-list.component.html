@@ -1,0 +1,16 @@
+<p>
+  categories-list works!
+</p>
+
+
+<ul *ngFor="let category of categories | async; let i = index;">
+  <li>
+    <a [routerLink]='["/products/", category.id]'>{{category.name}}</a> 
+  </li>
+  <li>
+    {{category.description}}
+  </li>
+  <li *ngFor="let image of category.images">
+    <img src="{{image.image}}">
+  </li>
+</ul>
